@@ -1,0 +1,242 @@
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #F9F0E3;
+}
+
+header, footer {
+    background-color: #34523F;
+    color: #F7EED3;
+    padding: 10px 0;
+}
+
+header img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #F7EED3;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+main section {
+    margin: 20px 0;
+}
+
+main section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service {
+    background-color: #F7EED3;
+    border: 1px solid #34523F;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #F7EED3;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer ul li a i {
+    margin-right: 5px;
+}
+
+.contact-section {
+    background-color: #F7EED3;
+    border: 1px solid #34523F;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34523F;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #34523F;
+    border-radius: 4px;
+    background-color: #F9F0E3;
+}
+
+.contact-form button {
+    background-color: #34523F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #F7EED3;
+    color: #34523F;
+}
+
+.screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: #F9F0E3;
+    border: 1px solid #34523F;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.screenshots img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border: 3px solid #34523F;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.screenshots img:hover {
+    transform: scale(1.05);
+    border-color: #F7EED3;
+}
+.hero {
+    background-color: #F7EED3;
+    padding: 40px 20px;
+    border: 1px solid #34523F;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #34523F;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.features {
+    background-color: #F9F0E3;
+    padding: 40px 20px;
+    border: 1px solid #34523F;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.features .feature {
+    margin: 20px 0;
+}
+
+.features .feature img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #34523F;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #F9F0E3;
+    border: 1px solid #34523F;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.screenshots .screenshot img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border: 3px solid #34523F;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.screenshots .screenshot img:hover {
+    transform: scale(1.05);
+    border-color: #F7EED3;
+}
+.preview {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.preview img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 3px solid #F7EED3;
+    border-radius: 8px;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button img {
+    width: 40px;
+    height: 40px;
+}
+

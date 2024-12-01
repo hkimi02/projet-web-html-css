@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadelNow - Club Manager</title>
+    <link rel="stylesheet" href="./assets/style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/imgs/logo-padel.svg" alt="PadelNow Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="club-manager.html">Club Manager</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Club Manager</h2>
+            <p>Découvrez notre application Club Manager pour gérer vos clubs et terrains de padel.</p>
+            <div class="screenshots">
+                <img src="./assets/imgs/clubmanagers/image.png" alt="Capture d'écran 1 de l'application Club Manager">
+                <img src="./assets/imgs/clubmanagers/reserv.png" alt="Capture d'écran 2 de l'application Club Manager">
+                <img src="./assets/imgs/clubmanagers/payment.png" alt="Capture d'écran 3 de l'application Club Manager">
+                <img src="./assets/imgs/clubmanagers/details-clubs.png" alt="Capture d'écran 4 de l'application Club Manager">
+                <img src="./assets/imgs/clubmanagers/image2.png" alt="Capture d'écran 5 de l'application Club Manager">
+                <img src="./assets/imgs/clubmanagers/details-terrain.png" alt="Capture d'écran 6 de l'application Club Manager">
+                <img src="./assets/imgs/clubmanagers/terrain.png" alt="Capture d'écran 7 de l'application Club Manager">
+            </div>
+        </section>
+        <div class="preview" id="preview">
+            <img id="previewImage" src="" alt="Image Preview">
+            <button id="closePreview" class="close-button">
+                <img src="./assets/imgs/icon-padel.svg" alt="Close Preview">
+            </button>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+    </footer>
+    <script>
+        const preview = document.getElementById('preview');
+        const previewImage = document.getElementById('previewImage');
+        const closePreview = document.getElementById('closePreview');
+        const screenshots = document.querySelectorAll('.screenshots img');
+    
+        // Open the preview
+        screenshots.forEach(image => {
+            image.addEventListener('click', () => {
+                previewImage.src = image.src;
+                preview.style.display = 'flex';
+            });
+        });
+    
+        // Close the preview
+        closePreview.addEventListener('click', () => {
+            preview.style.display = 'none';
+            previewImage.src = ''; // Clear the image
+        });
+    
+        // Close the preview when clicking outside the image
+        preview.addEventListener('click', (event) => {
+            if (event.target === preview) {
+                preview.style.display = 'none';
+                previewImage.src = ''; // Clear the image
+            }
+        });
+    </script>
+    
+</body>
+</html>
