@@ -6,10 +6,21 @@ body {
     background-color: #F9F0E3;
 }
 
-header, footer {
+ footer {
     background-color: #34523F;
     color: #F7EED3;
     padding: 10px 0;
+}
+
+header {
+    background-color: #34523F;
+    color: #F7EED3;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header img {
